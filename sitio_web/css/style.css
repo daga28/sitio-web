@@ -1,0 +1,60 @@
+body {
+    margin: 0em;
+    
+}
+
+h1 {
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.cover {
+    height: 400px;
+    background-image: url("D:/Documentos/Trabajo/CONALEP/Semestres/semestre2_22-23/6to semestre/Clases/sitio_web/img/portada.jpg");
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.cover-small {
+    height: 200px;
+    background-blend-mode: normal;
+}
+
+.card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+    font-family: 'Dancing Script', cursive;
+    min-height: 3rem;
+}
+
+.card-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    min-height: 7rem;
+}
+
+.card-footer {
+    min-height: 8rem;
+}
+
+#img4 {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-stripe{
+    overflow-x: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.stripe-container{
+    display: flex;
+}
+.stripe-container .card {
+    width: 300px;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
