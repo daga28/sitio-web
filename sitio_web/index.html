@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <!-- Se usa para Internet Explorer de 10 a versiones anteriores -->
@@ -12,6 +13,9 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
   <title>Programación DAGA</title>
+  <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="fontawesome/css/brands.css">
+  <link rel="stylesheet" href="fontawesome/css/solid.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
@@ -25,7 +29,7 @@
   <header>
     <!-- Barra de navegación de la página web. -->
     <!-- Usamos Bootstrap para agregar los estilos a la barra. -->
-    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="barra">
       <a class="navbar-brand" href="#">
         <!-- Agregamos un logo a la página web. -->
         <img src="img/lion_logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo león">
@@ -40,7 +44,7 @@
           <a class="nav-link" href="#">Ubicación</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Acerca de</a>
+          <a class="nav-link" href="acercade.html">Acerca de</a>
         </li>
       </ul>
     </nav> <!-- Termina la barra de navegación. -->
@@ -174,16 +178,53 @@
       </div>
     </div>
   </section>
+  <!-- Agregamos un mapa de nuestra ubicación-->
   <section>
-    <div class="container mt-5 mb-5 text-center">
+    <div class="container mt-5 mb-5">
       <h4>¡Te esperamos!</h4>
       <p>Colima LT2, Santa Teresa, Sta Teresa, La Magdalena Contreras, 10710 Ciudad de México, CDMX</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642.0241675054159!2d-99.22929407789698!3d19.31077368551869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdff9f590cdba9%3A0x8827f6e04635a0a3!2sColegio%20Nacional%20de%20Educaci%C3%B3n%20Profesional%20T%C3%A9cnica%20-%20Plantel%20Magdalena%20Contreras!5e0!3m2!1ses-419!2smx!4v1683435861900!5m2!1ses-419!2smx"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="responsive-iframe">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642.0241675054159!2d-99.22929407789698!3d19.31077368551869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdff9f590cdba9%3A0x8827f6e04635a0a3!2sColegio%20Nacional%20de%20Educaci%C3%B3n%20Profesional%20T%C3%A9cnica%20-%20Plantel%20Magdalena%20Contreras!5e0!3m2!1ses-419!2smx!4v1683435861900!5m2!1ses-419!2smx"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </section>
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/davidgalba94/" role="button"
+          target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/david_g_alba" role="button"
+          target="_blank">
+          <i class="fab fa-twitter"></i></a>
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/intl/es/gmail/about/"
+          role="button" target="_blank">
+          <i class="fab fa-google"></i></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/david_g_alba/"
+          role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      &copy; 2023 Copyright:
+      <a class="text-white" href="#barra">DAGA COMPANY</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 </body>
 
 </html>
